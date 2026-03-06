@@ -1,0 +1,9 @@
+a:hover {
+    text-transform: capitalize;
+    color: rgb(101, 110, 103);
+    border-bottom: solid 1px;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}

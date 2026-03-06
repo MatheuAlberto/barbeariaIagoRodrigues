@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth; /* rola suavemente ao clicar em âncoras */
+}
+
+/* Compensar header fixo*/
+:target {
+  scroll-margin-top: min(9.72221vw, 115px);
+}
+
+#rodape {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+#rodape > img {
+  width: min(200px, 17%);
+  height: auto;
+}
+
+#rodape > ul {
+  display: flex;
+  list-style: none;
+  gap: clamp(0.5rem, 2.5vw, 4rem);
+}
+#rodape > ul > li {
+  display: flex;
+  align-items: center;
+}
+#rodape > ul > li > a {
+  color: #000000;
+  text-decoration: none;
+  font-size: clamp(0.135rem, 2.5vw, 1.5rem);
+  list-style: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#rodape > #btn-rodape {
+  padding: clamp(6px, 1vw, 12px);
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+  font-size: clamp(0.135rem, 2vw, 1.5rem);
+}
+
+#imagem-principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+#imagem-principal > img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top right;
+}
+
+#imagem-principal > #informacao_barbearia_slogan_frase_motivadora {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: grid;
+  gap: min(50px, 5%);
+  padding: min(150px, 10%);
+  color: white;
+}
+
+#informacao_barbearia_slogan_frase_motivadora > #h1 {
+  font-family: "Rubik Distressed", system-ui;
+  font-size: clamp(1.8rem, 8vw, 6.6rem);
+  color: #ff6607;
+}
+
+#informacao_barbearia_slogan_frase_motivadora > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: min(2.5rem, 3vw);
+}
+
+#informacao_barbearia_slogan_frase_motivadora > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: min(1.5rem, 1.78vw);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+#informacao_barbearia_slogan_frase_motivadora > p > span {
+  display: inline-block;
+  text-decoration: none;
+  color: #ff6607;
+  padding-top: min(20px, 2%);
+}
+
+.servicos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: min(35px, 1%);
+  font-size: min(1.5rem, 2.7vw);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: white;
+  height: auto;
+  background-color: #ff6607;
+}
+
+#serv {
+  width: 100%;
+}
+
+#container-principal-assinantes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: min(100px, 2%);
+}
+
+#container-principal-assinantes > .conteiner-filhos-assinantes {
+  width: min(50dvw, 30dvw);
+  background-color: #181311;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  gap: min(15px, 1dvw);
+  color: white;
+  border-radius: 5px;
+  /* box-shadow: 5px 10px 5px black; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+#container-principal-assinantes > .conteiner-filhos-assinantes > .planos {
+  font-size: min(2rem, 3dvw);
+  font-weight: 600;
+  padding: min(50px, 6%) min(100px, 4%) 0;
+}
+
+#container-principal-assinantes > .conteiner-filhos-assinantes > img {
+  width: min(50rem, 30dvw);
+  height: auto;
+  object-fit: cover;
+}
+
+#container-principal-assinantes > .conteiner-filhos-assinantes > p {
+  font-size: min(1.5rem, 2.5dvw);
+  text-align: center;
+}
+
+#container-principal-assinantes
+  > .conteiner-filhos-assinantes
+  > .icones-informacao {
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  gap: 5px;
+  font-size: min(1.5rem, 2.5dvw);
+}
+
+#container-principal-assinantes > .conteiner-filhos-assinantes > button {
+  padding: min(50px, 5%) min(25px, 5%);
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  gap: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: min(1.5rem, 3dvw);
+}
+#cor-fundo-demais-servicos {
+  padding: 0 min(2%);
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+#background-servicos {
+  width: 100%;
+  background-color: #ff6607;
+  border-radius: 10px 10px 0 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+#container-principal-demais-cortes {
+  padding: 0 min(2%) min(5%);
+  background-color: #000;
+}
+
+#container-principal-demais-cortes > .conteiner-filhos-demais-cortes {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #f6f1f10a;
+  padding: min(20px, 5dvh) min(35px, 4dvw);
+  background: #181311;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: min(1.5rem, 2.5dvw);
+  font-weight: 500;
+}
+
+#container-principal-demais-cortes
+  > .conteiner-filhos-demais-cortes
+  > .informacaoes-esquerda-demais-cortes {
+  display: grid;
+  gap: min(20px, 1dvw);
+}
+
+#container-principal-demais-cortes
+  > .conteiner-filhos-demais-cortes
+  > .informacaoes-esquerda-demais-cortes
+  > .icones-informacao-demais-cortes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#container-principal-demais-cortes
+  > .conteiner-filhos-demais-cortes
+  > .informacaoes-direita-demais-cortes {
+  width: min(50rem, 25dvw);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#container-principal-demais-cortes
+  > .conteiner-filhos-demais-cortes
+  > .informacaoes-direita-demais-cortes
+  > button {
+  width: auto;
+  padding: min(5px, 7%) min(25px, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: min(1.5rem, 3dvw);
+  cursor: pointer;
+}
+
+#boder-radius-ultimo-demais-cortes {
+  border-radius: 0 0 9px 9px;
+}
+footer {
+  position: relative;
+}
+#imagem-container-pai-footer {
+  width: 100%;
+  height: min(47.8vw, 730px);
+}
+
+#imagem-container-pai-footer > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top right;
+}
+
+#imagem-container-pai-footer > #pai-esquer-direito {
+  width: min(62.5rem, 90%);
+  height: min(35rem, 50%);
+  color: white;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.108);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  margin: 0 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#meios-de-contato {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+#meios-de-contato > .contatos {
+  display: flex;
+  gap: 5px;
+  align-items: inherit;
+  cursor: pointer;
+  font-size: min(2rem, 3dvw);
+  color: #ff6607;
+}
+
+#meios-de-contato > .contatos > img {
+  width: min(80px, 15%);
+}
+
+#mapa {
+  width: 100%;
+}
+
+#mapa > iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+#creditosFinais {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  padding: min(0.25rem, 0.125rem);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: min(0.75rem, 3dvw);
+}
+
+#creditosFinais > p {
+  color: #fffcfc;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: clamp(0.135rem, 1.5vw, 1.5rem);
+}
+
+#creditosFinais > p > #iconeCreditosFinais {
+  margin: 0px 5px;
+}
+
+/* Componente de Notificação Efêmera (Hardware Accelerated) */
+#sota-toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+  /* Não bloqueia cliques inferiores */
+}
+
+.sota-toast {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-left: 4px solid red;
+  font-weight: 500;
+
+  /* Estado Inicial: Deslocado e Transparente */
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+
+  /* Curva SOTA para resposta motora visual */
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estado Ativo: Entropia Zero */
+.sota-toast.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* =========================================================
+   SOTA MODAL SYSTEM (Hardware Accelerated UI)
+   ========================================================= */
+.sota-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.sota-overlay.ativo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sota-modal {
+  background: #fff;
+  padding: min(1.25rem, 4dvw);
+  border-radius: 12px;
+  width: min(30.25rem, 70%);
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: min(15px, 2.5vw);
+}
+
+.sota-overlay.ativo > .sota-modal {
+  transform: scale(1);
+}
+
+.sota-modal > h2 {
+  font-size: min(1.5rem, 4dvw);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  font-family: "Rubik Distressed", system-ui;
+  font-weight: 300;
+}
+
+.sota-input-group {
+  display: flex;
+  flex-direction: column;
+  font-size: min(1.5rem, 2.5dvw);
+  gap: 5px;
+  margin-top: clamp(1.25rem, 10%, 2rem);
+}
+
+.sota-input-group input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: min(1.5rem, 3dvw);
+}
+.pai-sota {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pai-sota > .sota-grid-horas {
+  padding: 10px;
+  width: 18rem;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 1px solid #ccc;
+  font-size: min(1.5rem, 2.5dvw);
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.sota-btn-hora {
+  padding: 10px;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-size: min(1.5rem, 3.5dvw);
+}
+
+.sota-btn-hora:hover:not(:disabled) {
+  background: #ff6607;
+  color: #fff;
+}
+
+.sota-btn-hora.selecionado {
+  background: #ff6607;
+  color: #fff;
+  border-color: #ff6607;
+}
+
+.sota-btn-hora:disabled {
+  opacity: 0.3;
+  text-decoration: line-through;
+  cursor: not-allowed;
+  border-color: #ccc;
+}
+
+.sota-btn-acao {
+  padding: 3%;
+  background: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: clamp(0.135rem, 2.5vw, 1rem);
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sota-btn-acao.secundario {
+  background: #333;
+}
+
+/* Item Carrinho */
+.sota-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border-left: 4px solid #ff6607;
+  font-size: min(1.5rem, 3dvw);
+  border-radius: 4px;
+}
+
+.sota-btn-excluir {
+  background: transparent;
+  color: #ff6607;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
