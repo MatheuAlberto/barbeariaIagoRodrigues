@@ -108,7 +108,8 @@
         const confirmadosValidos = S_confirmados.filter(item => item.data >= hoje);
 
         let htmlItens = S_local.length === 0 
-            ? `<p style="text-align:center;display:flex;align-items:center;justify-content:center;height:10vh;font-size:clamp(0.313rem, 3dvw, 1.5rem);color:#666;">Nenhum agendamento no cache.</p>` 
+            ? `<p style="text-align:center;font-size:clamp(0.313rem, 3dvw, 1.5rem);padding: 10px 0;
+            color:#666;">Nenhum agendamento no cache.</p>` 
             : S_local.map((item, index) => `
                 <div class="sota-cart-item">
                     <div>
@@ -121,7 +122,7 @@
 
         // Seção de agendamentos confirmados (canceláveis)
         let htmlConfirmados = confirmadosValidos.length === 0
-            ? `<p style="text-align:center;font-size:clamp(0.313rem, 2.5dvw, 1rem);color:#999;padding:10px 0;">Nenhum agendamento confirmado ativo.</p>`
+            ? `<p style="text-align:center;font-size: clamp(0.313rem, 3dvw, 1.5rem);color:#666;padding:10px 0;">Nenhum agendamento confirmado ativo.</p>`
             : confirmadosValidos.map((item) => `
                 <div class="sota-cart-item sota-confirmado-item">
                     <div>
@@ -139,15 +140,15 @@
             <div class="sota-modal">
                 <h2>Meus Agendamentos</h2>
 
-                <div style="font-size:clamp(0.5rem, 2dvw, 0.85rem);font-weight:700;color:#ff6607;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">
+                <div style="font-size:clamp(0.5rem, 3dvw, 1.5rem);font-weight:800;color:#ff6607;text-transform:uppercase;margin-bottom:4px;">
                     🛒 Pendentes de Confirmação
                 </div>
                 <div style="display:flex;flex-direction:column;gap:10px;max-height:30vh;overflow-y:auto;">
                     ${htmlItens}
                 </div>
 
-                <div style="font-size:clamp(0.5rem, 2dvw, 0.85rem);font-weight:700;color:#28a745;text-transform:uppercase;letter-spacing:0.5px;margin:10px 0 4px;">
-                    ✅ Confirmados (clique para cancelar)
+                <div style="font-size:clamp(0.5rem, 3dvw, 1.5rem);font-weight:800;color:#28a745;text-transform:uppercase;">
+                    ✅ Confirmados
                 </div>
                 <div id="lista-confirmados" style="display:flex;flex-direction:column;gap:10px;max-height:30vh;overflow-y:auto;">
                     ${htmlConfirmados}

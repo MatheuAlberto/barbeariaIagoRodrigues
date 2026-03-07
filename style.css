@@ -337,6 +337,16 @@ footer {
   height: 100%;
   border-radius: 7px;
 }
+#meios-de-contato > .contatos > p {
+  font-size: clamp(0.135rem, 2.5vw, 1.5rem);
+}
+#meios-de-contato > .contatos > p > a {
+  color: #ff6607;
+
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
 
 #creditosFinais {
   width: 100%;
@@ -460,11 +470,12 @@ footer {
   flex-direction: column;
   font-size: min(1.5rem, 2.5dvw);
   gap: 5px;
-  margin-top: clamp(1.25rem, 10%, 2rem);
+  padding: 5px 0 0 0;
 }
 
 .sota-input-group input[type="date"] {
   padding: 10px;
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-family: inherit;
@@ -530,7 +541,7 @@ footer {
 }
 
 .sota-btn-acao.secundario {
-  background: #333;
+  background: rgb(31, 30, 30);
 }
 
 /* Item Carrinho */
