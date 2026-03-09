@@ -21,8 +21,8 @@
   "use strict";
 
   // ── ⚙️  CONFIGURAÇÃO — ALTERE AQUI ──────────────────────────────────────────
-  const BIN_ID  = "69aed36dd0ea881f400087c4";
-  const API_KEY = "$2a$10$.kYVguhFJPh01LRN3iDO.efXXcezFJTOR0vjwT2D4xPh3yvQyuBNy";
+  const BIN_ID  = "69aed36dd0ea881f400087c4";          // Ex: "6650abc123def456789"
+  const API_KEY = "$2a$10$.kYVguhFJPh01LRN3iDO.efXXcezFJTOR0vjwT2D4xPh3yvQyuBNy";  // Chave de acesso do JSONBin
 
   const URI_WHATSAPP = "https://wa.me/5596991896122?text=";
   const HORARIOS = ["09:00","10:00","11:00","14:00","15:00","16:00","17:00","18:00","19:00"];
@@ -43,13 +43,10 @@
   const binRead = async () => {
     try {
       const res = await fetch(`${BIN_URL}/latest`, {
-        headers: {
-          "X-Master-Key": API_KEY,
-          "X-Bin-Meta": "false",
-        },
+        headers: { "X-Access-Key": API_KEY },
       });
       const json = await res.json();
-      return json.record || json || {};
+      return json.record || {};
     } catch { return {}; }
   };
 
@@ -60,7 +57,7 @@
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
-          "X-Master-Key": API_KEY,
+          "X-Access-Key": API_KEY,
         },
         body: JSON.stringify(data),
       });
