@@ -509,7 +509,6 @@ footer {
 }
 
 .sota-btn-hora:hover:not(:disabled) {
-  background: #0F2942;
   color: #fff;
 }
 
