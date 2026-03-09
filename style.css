@@ -390,7 +390,7 @@ footer {
   padding: 16px 24px;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  border-left: 4px solid red;
+  border-left: 4px solid #1450A3;
   font-weight: 500;
 
   /* Estado Inicial: Deslocado e Transparente */
@@ -509,14 +509,12 @@ footer {
 }
 
 .sota-btn-hora:hover:not(:disabled) {
-  background: #ff6607;
+  background: #0F2942;
   color: #fff;
 }
 
 .sota-btn-hora.selecionado {
-  background: #ff6607;
-  color: #fff;
-  border-color: #ff6607;
+  border-color: #000000;
 }
 
 .sota-btn-hora:disabled {
@@ -528,7 +526,7 @@ footer {
 
 .sota-btn-acao {
   padding: 3%;
-  background: red;
+  background: #0F2942;
   color: white;
   font-weight: bold;
   border-radius: 6px;
@@ -549,14 +547,14 @@ footer {
   align-items: center;
   padding: 10px;
   background: #f9f9f9;
-  border-left: 4px solid #ff6607;
+  border-left: 4px solid #0F2942;
   font-size: min(1.5rem, 3dvw);
   border-radius: 4px;
 }
 
 .sota-btn-excluir {
   background: transparent;
-  color: #ff6607;
+  color: #0F2942;
   font-size: 1.2rem;
   cursor: pointer;
   font-weight: bold;

@@ -197,7 +197,7 @@
     ov.innerHTML = `
       <div class="sota-modal">
         <h2>Meus Agendamentos</h2>
-        <div style="font-size:clamp(0.5rem,3dvw,1.5rem);font-weight:800;color:#1450A3;text-transform:uppercase;margin-bottom:4px;">
+        <div style="font-size:clamp(0.5rem,3dvw,1.5rem);font-weight:800;color:#1E5EFF;text-transform:uppercase;margin-bottom:4px;">
           🛒 Pendentes de Confirmação
         </div>
         <div style="display:flex;flex-direction:column;gap:10px;max-height:30vh;overflow-y:auto;">${htmlItens}</div>
