@@ -14,7 +14,7 @@ html {
 
 /* Compensar header fixo*/
 :target {
-  scroll-margin-top: min(9.72221vw, 115px);
+  scroll-margin-top: min(9.72vw, 102px);
 }
 
 #rodape {
