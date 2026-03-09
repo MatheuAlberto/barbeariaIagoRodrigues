@@ -254,7 +254,7 @@
 
     const [ano, mes, dia] = dateStr.split("-").map(Number);
     const T_now    = Date.now();
-    const BUF_MS   = 15 * 60 * 1000;
+    const BUF_MS   = 0;
     const ocupados = estado[dateStr] || [];
 
     // Horários já no carrinho local (desta data)
@@ -337,9 +337,9 @@
 
     // F. Confirmar no WhatsApp → move pendentes para confirmados
     if (alvo.id === "sota-btn-confirmar-zap") {
-      let payload = "Fala, mestre! Quero confirmar estes agendamentos:\n\n";
+      let payload = "Olá! Tudo bom?\nGostaria de confirmar este agendamento. \u2702\uFE0F\n\n";
       S_local.forEach(x => {
-        payload += `✂️ *${x.servico}*\n📅 Dia: ${formatarData(x.data)}\n⏰ Hora: ${x.hora}\n\n`;
+        payload += `\u2702\uFE0F *${x.servico}*\n\uD83D\uDCC5 Data: ${formatarData(x.data)}\n\u23F0 Horário: ${x.hora}\n\n`;
         S_confirmados.push({ ...x });
       });
       syncConfirmados();
@@ -365,7 +365,7 @@
         S_confirmados = S_confirmados.filter(i => i.id !== itemId);
         syncConfirmados();
         dispararAlertaSOTA(`🗑️ Agendamento de ${item.servico} cancelado. Horário liberado.`, "#e53935");
-        const payload = `Olá! Preciso cancelar meu agendamento:\n\n✂️ *${item.servico}*\n📅 Dia: ${formatarData(item.data)}\n⏰ Hora: ${item.hora}\n\nPor favor, confirme o cancelamento. Obrigado!`;
+        const payload = `Ol\u00E1! Preciso cancelar meu agendamento:\n\n\u2702\uFE0F *${item.servico}*\n\uD83D\uDCC5 Data: ${formatarData(item.data)}\n\u23F0 Horário: ${item.hora}\n\nPor favor, confirme o cancelamento. Obrigado!`;
         window.open(URI_WHATSAPP + encodeURIComponent(payload), "_blank");
       }
       fecharModal();

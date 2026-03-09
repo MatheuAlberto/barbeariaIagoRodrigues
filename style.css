@@ -81,19 +81,17 @@ html {
 
 #imagem-principal > #informacao_barbearia_slogan_frase_motivadora {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   display: grid;
   gap: min(50px, 5%);
-  padding: min(150px, 10%);
+  padding-left: 10%;
+  padding-top: 14.5%;
   color: white;
 }
 
 #informacao_barbearia_slogan_frase_motivadora > #h1 {
   font-family: "Rubik Distressed", system-ui;
-  font-size: clamp(1.8rem, 8vw, 6.6rem);
-  color: #ff6607;
+  font-size: clamp(1rem, 5vw, 5.3rem);
+  color: #1450A3;
 }
 
 #informacao_barbearia_slogan_frase_motivadora > h1 {
@@ -112,7 +110,7 @@ html {
 #informacao_barbearia_slogan_frase_motivadora > p > span {
   display: inline-block;
   text-decoration: none;
-  color: #ff6607;
+  color: #1450A3;
   padding-top: min(20px, 2%);
 }
 
@@ -126,7 +124,7 @@ html {
   font-weight: 800;
   color: white;
   height: auto;
-  background-color: #ff6607;
+  background-color: #0F2942;
 }
 
 #serv {
@@ -203,7 +201,7 @@ html {
 }
 #background-servicos {
   width: 100%;
-  background-color: #ff6607;
+  background-color: #0F2942;
   border-radius: 10px 10px 0 0;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -341,7 +339,7 @@ footer {
   font-size: clamp(0.135rem, 2.5vw, 1.5rem);
 }
 #meios-de-contato > .contatos > p > a {
-  color: #ff6607;
+  color: #1450A3;
 
   text-decoration: none;
   transition: 0.3s;
