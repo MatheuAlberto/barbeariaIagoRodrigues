@@ -103,7 +103,7 @@
     return c;
   };
 
-  const dispararAlertaSOTA = (mensagem, cor = "red") => {
+  const dispararAlertaSOTA = (mensagem, cor = "#1E5EFF") => {
     const container = inicializarToastContainer();
     const toast = document.createElement("div");
     toast.className = "sota-toast";
@@ -319,7 +319,7 @@
 
       S_local.push({ id: Date.now(), ...bufferInteracao });
       syncLocal();
-      dispararAlertaSOTA(`✓ ${servico} adicionado ao agendamento!`, "#ff6607");
+      dispararAlertaSOTA(`✓ ${servico} adicionado ao agendamento!`, "#1E5EFF");
       fecharModal();
       return;
     }
@@ -364,7 +364,7 @@
         await liberarLock(item.data, item.hora);
         S_confirmados = S_confirmados.filter(i => i.id !== itemId);
         syncConfirmados();
-        dispararAlertaSOTA(`🗑️ Agendamento de ${item.servico} cancelado. Horário liberado.`, "#e53935");
+        dispararAlertaSOTA(`🗑️ Agendamento de ${item.servico} cancelado. Horário liberado.`, "#1E5EFF");
         const payload = `Ol\u00E1! Preciso cancelar meu agendamento:\n\n\u2702\uFE0F *${item.servico}*\n\uD83D\uDCC5 Data: ${formatarData(item.data)}\n\u23F0 Horário: ${item.hora}\n\nPor favor, confirme o cancelamento. Obrigado!`;
         window.open(URI_WHATSAPP + encodeURIComponent(payload), "_blank");
       }

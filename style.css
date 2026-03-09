@@ -319,7 +319,6 @@ footer {
   align-items: inherit;
   cursor: pointer;
   font-size: min(2rem, 3dvw);
-  color: #ff6607;
 }
 
 #meios-de-contato > .contatos > img {
@@ -514,6 +513,8 @@ footer {
 }
 
 .sota-btn-hora.selecionado {
+  background: #1450A3;
+  color: #fff;
   border-color: #000000;
 }
 
