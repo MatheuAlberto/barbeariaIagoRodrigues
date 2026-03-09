@@ -31,7 +31,7 @@ html {
 }
 
 #rodape > img {
-  width: min(200px, 17%);
+  width: min(200px, 20%);
   height: auto;
 }
 
