@@ -24,7 +24,7 @@
   const BIN_ID  = "69aed36dd0ea881f400087c4";
   const API_KEY = "$2a$10$.kYVguhFJPh01LRN3iDO.efXXcezFJTOR0vjwT2D4xPh3yvQyuBNy";
 
-  const URI_WHATSAPP = "https://wa.me/5596991896122?text=";
+  const URI_WHATSAPP = "https://wa.me/5592986357908?text=";
   const HORARIOS = ["09:00","10:00","11:00","14:00","15:00","16:00","17:00","18:00","19:00"];
   const BIN_URL  = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
 
